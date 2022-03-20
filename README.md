@@ -1,4 +1,4 @@
-<div align="center"><img align="center" src="/.github/logo.png" /></div>
+<div align="center"><img align="center" src="./logo.png" /></div>
 <hr>
 <div align="left"> 
 
@@ -53,6 +53,6 @@ Rain(0, 20, 300)
 
 All Nootils functions are documented using JSDoc allowing you to view documentation in an IDE using intellisense:
 
-<div align="center"><img src=".github/intellisense.png" /></div>
+<div align="center"><img src="./intellisense.png" /></div>
 
 </div>
