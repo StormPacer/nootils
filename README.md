@@ -26,7 +26,7 @@ import * as Nootils from 'nootils'
 
 const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 
-// Start of script, unsert your script below this line.
+// Start of script, insert your script below this line.
 
 Nootils.Rain(0, 20, 300) // This will add the rain effect to the opened map using magic (Remapper.activeDiff)
 
