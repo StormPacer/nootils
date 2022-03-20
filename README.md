@@ -1,4 +1,4 @@
-<div align="center"><img align="center" src="./logo.png" /></div>
+<div align="center"><img align="center" src="https://github.com/StormPacer/nootils/blob/main/logo.png?raw=true" /></div>
 <hr>
 <div align="left"> 
 
@@ -53,6 +53,6 @@ Rain(0, 20, 300)
 
 All Nootils functions are documented using JSDoc allowing you to view documentation in an IDE using intellisense:
 
-<div align="center"><img src="./intellisense.png" /></div>
+<div align="center"><img src="https://github.com/StormPacer/nootils/blob/main/intellisense.png?raw=true" /></div>
 
 </div>

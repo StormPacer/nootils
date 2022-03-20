@@ -12,7 +12,6 @@
     "StormPacer"
   ],
   "scripts": {
-    "prepublishOnly": "tsc",
     "build": "tsc"
   },
   "license": "MIT",
