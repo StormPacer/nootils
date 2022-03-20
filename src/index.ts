@@ -10,6 +10,8 @@ export * from './decor/smoke'
 export * from './decor/snow'
 export * from './decor/water'
 
+export * from './notes/ghosty'
+
 export * from './utils/giveTrack'
 
 // export * from './shapes/triangle'
