@@ -1,0 +1,14 @@
+{
+  "name": "nootils",
+  "version": "1.0.0",
+  "description": "A remapper addon that brings you simple preset functions.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/StormPacer/nootils",
+  "author": "StormPacer & cal117",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "remapper": "^0.1.0",
+    "typescript": "^4.6.2"
+  }
+}
