@@ -26,7 +26,7 @@ import * as Nootils from 'nootils'
 
 const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 
-// Start of script, unsert your script below this line.
+// Start of script, insert your script below this line.
 
 Nootils.Rain(0, 20, 300) // This will add the rain effect to the opened map using magic (Remapper.activeDiff)
 
@@ -50,6 +50,18 @@ import {Rain} from 'nootils'
 
 Rain(0, 20, 300)
 ```
+
+## Contributing
+As this package is community ran, we appreciate whoever commits to it.
+
+To commit, you need the following:
+
+- A new function, not already in the package (just update it if it already exists)
+- A description of what the function does
+- All variables explained one by one and what they do
+- Formatted the way other functions are
+
+#
 
 All Nootils functions are documented using JSDoc allowing you to view documentation in an IDE using intellisense:
 
