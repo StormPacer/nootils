@@ -3,11 +3,12 @@ import * as Remapper from 'swifter_remapper'
 function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
     const positions: any = [[0, 0, 0, 0]];
     let positive = false;
-    for (let i = 0; i < speed; i++) {
-        positive ? positions.push([0, maxY, 0, 1/speed + 1, easing]) : positions.push([0, -maxY, 0, 1/speed + 1, easing]);
+    for (let i = speed + 1; i > 0; i--) {
+        let pos = positive ? [0, maxY, 0, 0.35 / i, easing] : [0, -maxY, 0, 0.35 / i, easing];
+        positions.push(pos);
         positive = !positive;
     }
-    positions.push([0, 0, 0, 1, easing]);
+    positions.push([0, 0, 0, 0.4, easing]);
     filteredNotes.forEach(note => {
         note.animation = {
             _dissolve: [
@@ -15,7 +16,7 @@ function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: num
             ],
             _dissolveArrow: [
                 [0, 0],
-                [1, 0.1],
+                [1, 0.05],
             ],
             _position: positions,
         }
