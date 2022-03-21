@@ -14,7 +14,7 @@ function GiveWallsTrack(track: string, t1: number, t2: number) {
     filteredwalls.forEach(wall => {
         if (!wall.customData) wall.customData = {};
         if (Array.isArray(wall.customData._track)) wall.customData._track.push(track)
-        wall.customData._track = track;
+        else wall.customData._track = track;
     })
 }
 

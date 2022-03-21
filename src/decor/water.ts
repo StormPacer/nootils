@@ -7,7 +7,7 @@ import * as Remapper from 'swifter_remapper'
  * @param speed How fast the water should move, numbers between 0-5.
  * @param track What track the water should be assigned to.
  */
-function Water(startBeat: number, endBeat: number, speed: number, track: number) {
+function Water(startBeat: number, endBeat: number, speed: number, track: string) {
     let z = 0
     switch(speed) {
         case 0:

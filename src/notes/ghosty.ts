@@ -33,8 +33,13 @@ function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: num
  * @param transparent Should only the arrow be visible?
  * @author cal117
  */
-function GhostyT(track: string, speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
-    const filteredNotes = Remapper.activeDiff.notes.filter(n => n.track == track);
+function GhostyTrack(track: string, speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
+    const filteredNotes = Remapper.activeDiff.notes.filter(note => {
+        if(!note.customData) note.customData = {};
+        if(Array.isArray(note.customData._track)) return note.customData._track.includes(track);
+        else if (note.customData._track == track) return true;
+        else return false;
+    });
     InternalGhosty(filteredNotes, speed, maxY, easing, transparent);
 }
 
@@ -54,5 +59,5 @@ function Ghosty(startBeat: number, endBeat: number, speed: number, maxY: number,
 }
 
 export default {
-    GhostyT, Ghosty
+    GhostyTrack, Ghosty
 };
