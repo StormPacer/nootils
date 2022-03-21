@@ -15,11 +15,24 @@ function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5) {
 	})
 }
 
+/**
+ * Spawns a trail behind a note - similar to Somewhere Out There
+ * @param startBeat The beat to start the effect on.
+ * @param endBeat The beat to end the effect on.
+ * @param length The length of the trail.
+ * @author cal117
+ */
 function NoteTrail(startBeat: number, endBeat: number, length: number = 5) {
     const filterednotes = Remapper.activeDiff.notes.filter(note => note.time >= startBeat && note.time <= endBeat);
     InternalNoteTrail(filterednotes, length);
 }
 
+/**
+ * Spawns a trail behind a note - similar to Somewhere Out There
+ * @param track The track to apply the effect on.
+ * @param length The length of the trail.
+ * @author cal117
+ */
 function NoteTrailTrack(track: string, length: number = 5) {
     const filterednotes = Remapper.activeDiff.notes.filter(note => {
         if(!note.customData) note.customData = {};
