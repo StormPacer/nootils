@@ -1,6 +1,13 @@
 import * as Remapper from 'swifter_remapper'
+import Random from '../internal/random';
 
-function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, type: string = "arrow") {
+enum NoteTrailType {
+    BLOCK = "block",
+    ARROW = "arrow",
+    BOTH = "both",
+}
+
+function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, type: NoteTrailType.ARROW) {
 	filterednotes.forEach(note => {
         note.noteGravity = false;
         note.noteLook = false;
@@ -13,8 +20,8 @@ function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, t
 			dupe.fake = true;
 			dupe.animation._position = [[Random(-0.2, 0.2), 0, i * 4, 0.4], [0, 0, 0, 0.7]];
 			dupe.animation._localRotation = [[Random(0, 180), Random(0, 180), Random(0, 180), 0], [0, 0, 0, 0.3]];
-			if (type == "block") dupe.animation._dissolve = [[0.1, 0], [0, 1, Remapper.EASE.IN_OUT_CUBIC]];
-			if (type == "arrow") dupe.animation._dissolveArrow = [[0.1, 0]];
+			if (type.valueOf() == "note" || type.valueOf() == "both") dupe.animation._dissolve = [[0.1, 0], [0, 1, Remapper.EASE.IN_OUT_CUBIC]];
+			if (type.valueOf() == "arrow" || type.valueOf() == "both") dupe.animation._dissolveArrow = [[0.1, 0]];
 			dupe.push();
 		}
 	})
@@ -28,7 +35,7 @@ function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, t
  * @param type What the effect should use for the trail, it can be "arrow" or "block"
  * @author cal117
  */
-function NoteTrail(startBeat: number, endBeat: number, length: number = 5, type: string = "arrow") {
+function NoteTrail(startBeat: number, endBeat: number, length: number = 5, type: NoteTrailType.ARROW) {
     const filterednotes = Remapper.activeDiff.notes.filter(note => note.time >= startBeat && note.time <= endBeat);
     InternalNoteTrail(filterednotes, length, type);
 }
@@ -40,7 +47,7 @@ function NoteTrail(startBeat: number, endBeat: number, length: number = 5, type:
  * @param type What the effect should use for the trail, it can be "arrow" or "block"
  * @author cal117
  */
-function NoteTrailTrack(track: string, length: number = 5, type: string = "arrow") {
+function NoteTrailTrack(track: string, length: number = 5, type: NoteTrailType = NoteTrailType.ARROW) {
     const filterednotes = Remapper.activeDiff.notes.filter(note => {
         if(!note.customData) note.customData = {};
         if(Array.isArray(note.customData._track)) return note.customData._track.includes(track);
@@ -49,3 +56,5 @@ function NoteTrailTrack(track: string, length: number = 5, type: string = "arrow
     });
     InternalNoteTrail(filterednotes, length, type);
 }
+
+export default {NoteTrailType, NoteTrail, NoteTrailTrack}
