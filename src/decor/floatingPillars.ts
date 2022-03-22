@@ -1,4 +1,4 @@
-import Random from "../internal/random"
+import {Random} from "../internal/random"
 
 import * as Remapper from 'swifter_remapper'
 
@@ -20,7 +20,7 @@ import * as Remapper from 'swifter_remapper'
  * @author StormPacer
  */
 
- function FloatingPillars(startBeat: number, endBeat: number, amountPerRow: number, spacing: number, startX: number, height: number, width: number, startZ: number, track: string, R: number, G: number, B: number, A: number) {
+export function FloatingPillars(startBeat: number, endBeat: number, amountPerRow: number, spacing: number, startX: number, height: number, width: number, startZ: number, track: string, R: number, G: number, B: number, A: number) {
     let z = startZ
     for (let i = 0; i <= amountPerRow; i++) {
         if (z <= spacing * amountPerRow) {
@@ -49,5 +49,3 @@ import * as Remapper from 'swifter_remapper'
         }
     }
 }
-
-export default FloatingPillars;

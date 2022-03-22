@@ -1,4 +1,4 @@
-import Random from "../internal/random"
+import {Random} from "../internal/random"
 
 import * as Remapper from 'swifter_remapper'
 
@@ -6,11 +6,11 @@ import * as Remapper from 'swifter_remapper'
  * Spawns in walls that resemble rain.
  * @param startingBeat The beat that the rain should start on.
  * @param duration For how many beats the rain should last for.
- * @param amount How many walls should be created in that timespan.
+ * @param amount How many walls should be created per beat.
  * @author StormPacer
  */
 
-function Rain(startingBeat: number, duration: number, amount: number) {
+export function Rain(startingBeat: number, duration: number, amount: number) {
     for (let i = 0; i < (duration * amount); i++) {
         let x = Random(-40, 40)
         let z = Random(0, 50)
@@ -31,5 +31,3 @@ function Rain(startingBeat: number, duration: number, amount: number) {
         wall.push();
     }
 }
-
-export default Rain;

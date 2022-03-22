@@ -58,6 +58,6 @@ function Ghosty(startBeat: number, endBeat: number, speed: number, maxY: number,
     InternalGhosty(filteredNotes, speed, maxY, easing, transparent);
 }
 
-export default {
+export {
     GhostyTrack, Ghosty
 };

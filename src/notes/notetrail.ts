@@ -1,5 +1,5 @@
 import * as Remapper from 'swifter_remapper'
-import Random from '../internal/random';
+import {Random} from '../internal/random';
 
 enum NoteTrailType {
     BLOCK = "block",
@@ -57,4 +57,8 @@ function NoteTrailTrack(track: string, length: number = 5, type: NoteTrailType =
     InternalNoteTrail(filterednotes, length, type);
 }
 
-export default {NoteTrailType, NoteTrail, NoteTrailTrack}
+export {
+    NoteTrailType, 
+    NoteTrail, 
+    NoteTrailTrack
+}

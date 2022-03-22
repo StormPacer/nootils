@@ -96,4 +96,4 @@ function GiveTypeNotesTrack(type0Track: string, type1Track: string, t1: number, 
     })
 }
 
-export default {GiveNotesTrack, GiveWallsTrack, GiveTypeNotesTrack, GiveNotesOnLanesTrack}
+export {GiveNotesTrack, GiveWallsTrack, GiveTypeNotesTrack, GiveNotesOnLanesTrack}

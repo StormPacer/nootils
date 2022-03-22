@@ -15,7 +15,7 @@ import * as Remapper from "swifter_remapper"
  * @author StormPacer
  */
 
-function Circle(startTime: number, endTime: number, track: string, radius: number, amount: number, height: number, length: number, x: number, y: number, z: number) {
+export function Circle(startTime: number, endTime: number, track: string, radius: number, amount: number, height: number, length: number, x: number, y: number, z: number) {
     for (let i = 0; i < amount; i++) {
         let wall = new Remapper.Wall(startTime, endTime - startTime, 0, 0, 0)
 
@@ -40,5 +40,3 @@ function Circle(startTime: number, endTime: number, track: string, radius: numbe
         wall.push()
     }
 }
-
-export default Circle

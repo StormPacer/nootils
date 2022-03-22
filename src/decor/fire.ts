@@ -1,4 +1,4 @@
-import Random from "../internal/random"
+import {Random} from "../internal/random"
 
 import * as Remapper from 'swifter_remapper'
 
@@ -14,7 +14,7 @@ import * as Remapper from 'swifter_remapper'
  * @author StormPacer
  */
 
-function Fire(startingBeat: number, duration: number, fireWallDuration: number, size: number, x: number, y: number, z: number) {
+export function Fire(startingBeat: number, duration: number, fireWallDuration: number, size: number, x: number, y: number, z: number) {
     for (let i = 0; i < (duration * 6); i++) {
 
         let wall = new Remapper.Wall(startingBeat + (i / 6), fireWallDuration, 1, 0, 0);
@@ -33,5 +33,3 @@ function Fire(startingBeat: number, duration: number, fireWallDuration: number, 
         wall.push();
     }
 }
-
-export default Fire;

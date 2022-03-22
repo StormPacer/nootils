@@ -10,7 +10,7 @@ import * as Remapper from 'swifter_remapper'
  * @author StormPacer
  */
 
- function Water(startBeat: number, endBeat: number, track: string, speed: number, y: number) {
+export function Water(startBeat: number, endBeat: number, track: string, speed: number, y: number) {
     let z = 0
     switch(speed) {
         case 0:
@@ -42,5 +42,3 @@ import * as Remapper from 'swifter_remapper'
 
     wall.push();
 }
-
-export default Water;

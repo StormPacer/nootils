@@ -12,7 +12,7 @@ import * as Remapper from "swifter_remapper";
  * @author StormPacer
  */
 
-function Square(startTime: number, endTime: number, track: string, x: number, y: number, z: number, length: number) {
+export function Square(startTime: number, endTime: number, track: string, x: number, y: number, z: number, length: number) {
     let wall1 = new Remapper.Wall(startTime, endTime - startTime, 0, 1)
 
     wall1.customData = {
@@ -57,5 +57,3 @@ function Square(startTime: number, endTime: number, track: string, x: number, y:
     }
     wall4.push()
 }
-
-export default Square
