@@ -1,5 +1,13 @@
 import * as Remapper from 'swifter_remapper'
 
+/**
+ * Gives the notes between desired beats a track.
+ * @param track The track you want the notes to have.
+ * @param t1 From which beat it should start assigning the track.
+ * @param t2 To which beat it should assign the tracks to.
+ * @author StormPacer
+ */
+
 function GiveNotesTrack(track: string, t1: number, t2: number) {
     const filterednotes = Remapper.activeDiff.notes.filter(n => n.time >= t1 && n.time <= t2)
     filterednotes.forEach(note => {
@@ -9,6 +17,14 @@ function GiveNotesTrack(track: string, t1: number, t2: number) {
     });
 }
 
+/**
+ * Gives the walls between desired beats a track.
+ * @param track The track you want the walls to have.
+ * @param t1 From which beat it should start assigning the track.
+ * @param t2 To which beat it should assign the tracks to.
+ * @author StormPacer 
+ */
+
 function GiveWallsTrack(track: string, t1: number, t2: number) {
     const filteredwalls = Remapper.activeDiff.obstacles.filter(o => o.time >= t1 && o.time <= t2)
     filteredwalls.forEach(wall => {
@@ -17,6 +33,17 @@ function GiveWallsTrack(track: string, t1: number, t2: number) {
         else wall.customData._track = track;
     })
 }
+
+/**
+ * Gives the notes between desired beats a track. Separates by lanes
+ * @param lane1Track The track you want the notes on lane 1 to have.
+ * @param lane2Track The track you want the notes on lane 2 to have.
+ * @param lane3Track The track you want the notes on lane 3 to have.
+ * @param lane4Track The track you want the notes on lane 4 to have.
+ * @param t1 From which beat it should start assigning the track.
+ * @param t2 To which beat it should assign the tracks to.
+ * @author StormPacer
+ */
 
 function GiveNotesOnLanesTrack(lane1Track: string, lane2Track: string, lane3Track: string, lane4Track: string, t1: number, t2: number) {
     const filterednotes = Remapper.activeDiff.notes.filter(n => n.time >= t1 && n.time <= t2)
@@ -43,6 +70,15 @@ function GiveNotesOnLanesTrack(lane1Track: string, lane2Track: string, lane3Trac
         }
     })
 }
+
+/**
+ * Gives the notes between desired beats a track. Separates by type
+ * @param type0Track The track you want the left notes to have.
+ * @param type1Track The track you want the right notes to have.
+ * @param t1 From which beat it should start assigning the track.
+ * @param t2 To which beat it should assign the tracks to.
+ * @author StormPacer 
+ */
 
 function GiveTypeNotesTrack(type0Track: string, type1Track: string, t1: number, t2: number) {
     const filterednotes = Remapper.activeDiff.notes.filter(n => n.time >= t1 && n.time <= t2)

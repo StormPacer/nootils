@@ -15,6 +15,6 @@ export * from './notes/notetrail'
 
 export * from './utils/giveTrack'
 
-// export * from './shapes/triangle'
-// export * from './shapes/square'
-// export * from './shapes/circle'
+export * from './shapes/triangle'
+export * from './shapes/square'
+export * from './shapes/circle'

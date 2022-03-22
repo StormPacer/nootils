@@ -1,27 +1,30 @@
 import * as Remapper from 'swifter_remapper'
 
 /**
- *
+ * Spawns a wall that resembles water.
  * @param startBeat The beat that the water should start on.
  * @param endBeat The beat that the water should end on.
- * @param speed How fast the water should move, numbers between 0-5.
  * @param track What track the water should be assigned to.
+ * @param speed How fast the water should move, numbers between 0-5.
+ * @param y On which Y position the water should spawn.
+ * @author StormPacer
  */
-function Water(startBeat: number, endBeat: number, speed: number, track: string) {
+
+ function Water(startBeat: number, endBeat: number, track: string, speed: number, y: number) {
     let z = 0
     switch(speed) {
         case 0:
-            return z = -1000
+            z = -1000
         case 1:
-            return z = -1100
+            z = -1100
         case 2:
-            return z = -1200
+            z = -1200
         case 3:
-            return z = -1300
+            z = -1300
         case 4:
-            return z = -1400
+            z = -1400
         case 5:
-            return z = -1500
+            z = -1500
     }
 
     let wall = new Remapper.Wall(startBeat, endBeat, 1, 0, 0);
@@ -33,7 +36,7 @@ function Water(startBeat: number, endBeat: number, speed: number, track: string)
         _interactable: false,
         _scale: [2000, 0.5, 2000],
         _animation: {
-            _definitePosition: [[-1000, 302.5, -1000, 0], [-1000, 302.5, z, 1]]
+            _definitePosition: [[-1000, y, -1000, 0], [-1000, y, z, 1]]
         }
     };
 
