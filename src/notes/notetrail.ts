@@ -7,7 +7,7 @@ enum NoteTrailType {
     BOTH = "both",
 }
 
-function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, type: NoteTrailType.ARROW) {
+function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, type: NoteTrailType) {
 	filterednotes.forEach(note => {
         note.noteGravity = false;
         note.noteLook = false;
