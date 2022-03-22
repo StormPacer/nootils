@@ -4,7 +4,7 @@ import Random from '../internal/random';
 function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5) {
 	filterednotes.forEach(note => {
 		for (let i = 1; i < length; i++) {
-			let dupe = new Remapper.Note(note.time, note.type, note.direction);
+			let dupe = new Remapper.Note(note.time, note.type, note.direction, note.position);
 			dupe.fake = true;
 			dupe.animation._position = [[Random(-0.2, 0.2), 0, i * 2, 0], [0, 0, 0, 0.3]];
 			dupe.animation._localRotation = [[Random(0, 180), Random(0, 180), Random(0, 180), 0], [0, 0, 0, 0.3]];
