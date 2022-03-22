@@ -5,6 +5,8 @@
 The all around modchart helper that contains functions and utilities created by the community.
 
 These scripts are designed to be used with [Remapper](https://github.com/Swifter1243/ReMapper).
+  
+Checkout examples of all the visible effects in [EXAMPLES.md](EXAMPLES.md)
 
 ## Installation
 
