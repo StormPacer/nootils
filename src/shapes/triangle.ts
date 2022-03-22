@@ -24,7 +24,7 @@ function Triangle(startTime: number, endTime: number, track: string, x: number, 
     wall1.push()
 
     let wall2 = new Remapper.Wall(startTime, endTime - startTime, 0, 1)
-    wall1.customData = {
+    wall2.customData = {
         _scale: [10, 0.1, length],
         _localRotation: [0, 0, -60],
         _track: track,
@@ -35,7 +35,7 @@ function Triangle(startTime: number, endTime: number, track: string, x: number, 
     wall2.push()
 
     let wall3 = new Remapper.Wall(startTime, endTime - startTime, 0, 1)
-    wall1.customData = {
+    wall3.customData = {
         _scale: [10, 0.1, length],
         _localRotation: [0, 0, 60],
         _track: track,
