@@ -11,7 +11,7 @@ export * from './decor/snow'
 export * from './decor/water'
 
 export * from './notes/ghosty'
-export * from './notes/notetrail'
+// export * from './notes/notetrail' // Broken - fix later
 
 export * from './utils/giveTrack'
 
