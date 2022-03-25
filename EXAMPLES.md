@@ -36,7 +36,7 @@ Makes a trail behind notes.
 
 Gives the effect that there is Floating Debris when the note is hit.
 
-<img width="620" height="auto" src="https://cdn.discordapp.com/attachments/952927219586572289/957050754592555128/ezgif.com-gif-maker.gif">
+<img width="620" height="auto" src="https://imgur.com/a/DT1KJWG">
 
 ### Decoration
 
