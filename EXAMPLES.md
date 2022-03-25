@@ -32,12 +32,6 @@ Makes a trail behind notes.
 
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159541195-31b10f1b-c67f-4fa9-80b0-76238df2b669.gif">
 
-#### Floating Debris
-
-Gives the effect that there is Floating Debris when the note is hit.
-
-<img width="620" height="auto" src="https://imgur.com/a/DT1KJWG">
-
 ### Decoration
 
 #### Fire
