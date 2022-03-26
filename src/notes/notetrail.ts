@@ -35,7 +35,7 @@ function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, t
  * @param type What the effect should use for the trail, it can be "arrow" or "block"
  * @author cal117
  */
-function NoteTrail(startBeat: number, endBeat: number, length: number = 5, type: NoteTrailType.ARROW) {
+function NoteTrail(startBeat: number, endBeat: number, length: number = 5, type: NoteTrailType = NoteTrailType.ARROW) {
     const filterednotes = Remapper.activeDiff.notes.filter(note => note.time >= startBeat && note.time <= endBeat);
     InternalNoteTrail(filterednotes, length, type);
 }
