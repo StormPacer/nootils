@@ -6,12 +6,12 @@ import {Random} from '../internal/random';
  * Gives the effect of floating debris when you slice a note.
  * @param startBeat The beat on which the effect should start on.
  * @param endBeat The beat to end the effect on.
- * @param duration How long the debris will last (might be scuffed)
+ * @param duration How long the debris will last, defaulted to 2.
  * @param spread How far the debris will go, defaulted to 1.
  * @author Pangwen
  */
 
-export function FloatingDebris(startBeat: number,  endBeat: number,  duration: number, spread: number = 1) {
+export function FloatingDebris(startBeat: number,  endBeat: number,  duration: number = 2, spread: number = 1) {
     Remapper.notesBetween(startBeat,  endBeat,  note => {
         if (note.type != Remapper.NOTE.BOMB) {
             let dupe = new Remapper.Note(note.time,  note.type,  note.direction,  note.position);
