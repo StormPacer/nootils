@@ -95,7 +95,7 @@ map.save();
 
 Makes notes bounce up and down like ghosts - inspired by the notes found in [Ghost Choir mapped by nyri0](https://beatsaver.com/maps/1362d)
 ___
-**Ghosty**:
+**Ghosty**:<br />
 Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
 -  `startBeat`: The beat to start the effect on.
@@ -105,8 +105,8 @@ Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 -  `easing `:The easing to use.
 -  `transparent`: Should only the arrow be visible?
  
- **Ghosty Track**:
- Apply's the Ghosty effect to a track.
+ **Ghosty Track**:<br />
+ Apply's the Ghosty effect to a track.<br />
  This will override any animations already applied to the notes.
  
 -   `track`: The track to apply the effect to.
@@ -136,7 +136,7 @@ map.save();
 
 Makes a trail behind notes.
 ___
-**Note Trail**:
+**Note Trail**:<br />
 Apply's the Note Trail effect on notes between `startBeat` to `endBeat`
 
 - `startBeat`: The beat to start the effect on.
@@ -144,7 +144,7 @@ Apply's the Note Trail effect on notes between `startBeat` to `endBeat`
 - `length `:The length of the trail.
 - `type`: What the effect should use for the trail, it can be "arrow" or "block"
 
-**Note Trail Track**:
+**Note Trail Track**:<br />
 Apply's the Note Trail effect to a track.
 
 - `track`: The track to apply the effect on.
@@ -283,7 +283,15 @@ ___
 
 Example:
 ```ts
+import  *  as  Remapper  from  'swifter_remapper'
+import  *  as  Nootils  from  'nootils'
 
+const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+
+// Adds snow between beats 0 to 10, with an amount of 50.
+Nootils.Snow(0, 10, 50)
+
+map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159537559-126b5c1e-4575-4783-ad67-6ba00682a541.gif">
 
@@ -300,13 +308,20 @@ ___
 
 Example:
 ```ts
+import  *  as  Remapper  from  'swifter_remapper'
+import  *  as  Nootils  from  'nootils'
 
+const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+
+// Adds water between beats 0 to 10, on the track "waterTrack", with a speed of 1 and a Y value of 0.
+Nootils.Water(0, 10, "waterTrack", 1, 0)
+
+map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159539607-9291fa45-5953-495b-89f0-724fd779fda6.png">
 
 
 #### Floating Pillars
-___
 **Documentation**:
 - `startBeat`: The beat that the pillars should start on.
 - `endBeat`: The beat that the pillars should end on.
@@ -324,10 +339,70 @@ ___
 
 Example:
 ```ts
+import  *  as  Remapper  from  'swifter_remapper'
+import  *  as  Nootils  from  'nootils'
 
+const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+
+// Add's floating pillars between beats 0 and 10. Theres alot of parameters in this effect, so I suggest you mess around with on your own.
+Nootils.FloatingPillars(0, 10, 10, 1, 0, 10, 10, 0, "pillarsTrack", 1, 1, 1, 1)
+
+map.save();
 ```
 Spawns in floating pillars on the desired positions and spacing.
 
 https://user-images.githubusercontent.com/93472213/159541412-35bd6f43-504d-4f45-b945-e53354c3e8e9.mp4
 
 <small>Note - this effect was too big to put in a gif - excuse the video for now.</small>
+
+### Utility
+#### Give Track
+Gives a track to selected objects.
+___
+**Give Notes Track**:<br />
+Gives the notes between desired beats a track.
+
+- `track`: The track you want the notes to have.
+- `t1`: From which beat it should start assigning the track.
+- `t2`: To which beat it should assign the tracks to.
+ 
+**Give Walls Track**:<br />
+Gives the walls between desired beats a track.
+- `track`: The track you want the walls to have.
+- `t1`: From which beat it should start assigning the track.
+- `t2`: To which beat it should assign the tracks to.
+
+**Give Notes On Lane Track**:<br />
+Gives the notes between desired beats a track. Separates by lanes
+- `lane1Track`: The track you want the notes on lane 1 to have.
+- `lane2Track`: The track you want the notes on lane 2 to have.
+- `lane3Track`: The track you want the notes on lane 3 to have.
+- `lane4Track`: The track you want the notes on lane 4 to have.
+- `t1`: From which beat it should start assigning the track.
+- `t2`: To which beat it should assign the tracks to.
+
+**Give Type Notes Track**:<br />
+Gives the notes between desired beats a track. Separates by type
+- `type0Track`: The track you want the left notes to have.
+- `type1Track`: The track you want the right notes to have.
+- `t1`: From which beat it should start assigning the track.
+- `t2`: To which beat it should assign the tracks to.
+
+Example:
+```ts
+import  *  as  Remapper  from  'swifter_remapper'
+import  *  as  Nootils  from  'nootils'
+
+const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+ 
+// Gives all notes between beat 0 to 10, the track "noteTrack"
+Nootils.GiveNotesTrack("noteTrack", 0, 10)
+// Gives all walls between beat 0 to 10, the track "wallTrack"
+Nootils.GiveWallsTrack("wallTrack", 0, 10)
+// Gives all notes between 0 and 10 there corresponding track based off of their lane.
+Nootils.GiveNotesOnLanesTrack("line1Track", "line2Track", "line3Track", "line4Track", 0, 10)
+// Gives all notes between 0 and 10 there corresponding track based off of their type/color.
+Nootils.GiveTypeNotesTrack("type0Track", "type1Track", 0, 10)
+
+map.save();
+```
