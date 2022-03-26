@@ -17,10 +17,10 @@ Makes a triangle using walls, can be configurable to make 3D prisms ect.
 Example:
 
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 // Makes a triangle that lasts 10 beats.
 
 Nootils.Triangle(0, 10, "triangleTrack", 0, 0, 5, 10)
@@ -45,10 +45,10 @@ Makes a square using walls, can be configurable to make 3D cubes ect.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 
 // Makes a square that lasts 10 beats.
 Nootils.Square(0, 10, "squareTrack", 0, 0, 5, 10) 
@@ -76,10 +76,10 @@ Makes a circle using walls, can be configurable to make 3D cylinders ect.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
  
-const  map  =  new  Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 
 // Makes a circle that lasts 10 beats, with a radius/scale of 5.
 Nootils.Circle(0, 10, "circleTrack", 5, 1, 5, 10, 0, 0, 5)
@@ -98,18 +98,18 @@ Makes notes bounce up and down like ghosts - inspired by the notes found in [Gho
 **Ghosty**:<br />
 Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
--  `startBeat`: The beat to start the effect on.
--  `endBeat`: The beat to end the effect on.
--  `speed`: The speed in how many times it bounces before reaching the player.
--  `maxY`: The max Y level the note can reach on negative Y and positive Y
--  `easing `:The easing to use.
--  `transparent`: Should only the arrow be visible?
+- `startBeat`: The beat to start the effect on.
+- `endBeat`: The beat to end the effect on.
+- `speed`: The speed in how many times it bounces before reaching the player.
+- `maxY`: The max Y level the note can reach on negative Y and positive Y
+- `easing `:The easing to use.
+- `transparent`: Should only the arrow be visible?
  
  **Ghosty Track**:<br />
  Apply's the Ghosty effect to a track.<br />
  This will override any animations already applied to the notes.
  
--   `track`: The track to apply the effect to.
+-  `track`: The track to apply the effect to.
 - `speed`: The speed in how many times it bounces before reaching the player.
 - `maxY`: The max Y level the note can reach on negative Y and positive Y
 - `easing`: The easing type.
@@ -117,10 +117,10 @@ Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
 
 // Apply's Ghosty effect to notes between beat 0 to 10.
 Nootils.Ghosty(0, 10, 1, 2, Remapper.EASE.OUT_CUBIC, true)
@@ -153,10 +153,10 @@ Apply's the Note Trail effect to a track.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Adds a Note Trail effect to notes between beat 0 to 10.
 Nootils.NoteTrail(0, 10, 3, Nootils.NoteTrailType.ARROW)
@@ -179,10 +179,10 @@ Gives the effect of floating debris when you slice a note.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Apply's the Floating Debris effect to notes between beat 0 to 10, with a duration of 2, and spread/distance of 1.
 Nootils.FloatingDebris(0, 10, 2, 1)
@@ -208,10 +208,10 @@ Self explanatory - spawns fire at a position.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Spawns a fire at beat 0, that lasts until beat 10, with a size of 5.
 Nootils.Fire(0, 10, 2, 5, 0, 0, 5)
@@ -231,10 +231,10 @@ Self explanatory - makes it rain ☔
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Adds rain through beat 0 to 10, with an amount of 50.
 Nootils.Rain(0, 10, 50)
@@ -260,10 +260,10 @@ Self explanatory - spawns smoke particles at a position.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Adds smoke through beat 0 to 10, with a size of 5.
 Nootils.Smoke(0, 10, 2, 5, 0, 0, 5)
@@ -283,10 +283,10 @@ Self explanatory - makes it snow! ❄️
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Adds snow between beats 0 to 10, with an amount of 50.
 Nootils.Snow(0, 10, 50)
@@ -308,10 +308,10 @@ Spawns a flat base that looks like water.
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Adds water between beats 0 to 10, on the track "waterTrack", with a speed of 1 and a Y value of 0.
 Nootils.Water(0, 10, "waterTrack", 1, 0)
@@ -339,10 +339,10 @@ map.save();
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
 
 // Add's floating pillars between beats 0 and 10. Theres alot of parameters in this effect, so I suggest you mess around with on your own.
 Nootils.FloatingPillars(0, 10, 10, 1, 0, 10, 10, 0, "pillarsTrack", 1, 1, 1, 1)
@@ -390,10 +390,10 @@ Gives the notes between desired beats a track. Separates by type
 
 Example:
 ```ts
-import  *  as  Remapper  from  'swifter_remapper'
-import  *  as  Nootils  from  'nootils'
+import * as Remapper from 'swifter_remapper'
+import * as Nootils from 'nootils'
 
-const  map  =  new  Remapper.Difficulty("ExpertPlusLawless.dat");
+const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
  
 // Gives all notes between beat 0 to 10, the track "noteTrack"
 Nootils.GiveNotesTrack("noteTrack", 0, 10)
