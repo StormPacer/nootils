@@ -4,7 +4,7 @@
 #### Triangle
 
 Makes a triangle using walls, can be configurable to make 3D prisms ect.
-___
+
 **Documentation**:
 - `startTime`: The beat that the triangle should be spawned on.
 - `endTime`: The beat that the triangle should disappear.
@@ -33,7 +33,7 @@ map.save();
 #### Square
 
 Makes a square using walls, can be configurable to make 3D cubes ect.
-___
+
 **Documentation**:
 - `startTime`: The beat that the square should be spawned on.
 - `endTime`: The beat that the square should disappear.
@@ -61,7 +61,7 @@ map.save();
 #### Circle
 
 Makes a circle using walls, can be configurable to make 3D cylinders ect.
-___
+
 **Documentation**:
 - `startTime`: The beat that the circle should be spawned on.
 - `endTime`: The beat that the circle should disappear.
@@ -94,7 +94,7 @@ map.save();
 #### Ghosty
 
 Makes notes bounce up and down like ghosts - inspired by the notes found in [Ghost Choir mapped by nyri0](https://beatsaver.com/maps/1362d)
-___
+
 **Ghosty**:<br />
 Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
@@ -135,7 +135,7 @@ map.save();
 #### Note Trail
 
 Makes a trail behind notes.
-___
+
 **Note Trail**:<br />
 Apply's the Note Trail effect on notes between `startBeat` to `endBeat`
 
@@ -170,7 +170,7 @@ map.save();
 
 #### Floating Debris
 Gives the effect of floating debris when you slice a note.
-___
+
 **Documentation**:
 - `startBeat`: The beat on which the effect should start on.
 - `endBeat`: The beat to end the effect on.
@@ -196,7 +196,7 @@ map.save();
 #### Fire
 
 Self explanatory - spawns fire at a position.
-___
+
 **Documentation**:
 - `startingBeat`: The beat that the fire should start on.
 - `duration`: For how many beats the fire should last for.
@@ -223,7 +223,7 @@ map.save();
 #### Rain
 
 Self explanatory - makes it rain ☔ 
-___
+
 **Documentation**:
 - `startingBeat`: The beat that the rain should start on.
 - `duration`: For how many beats the rain should last for.
@@ -248,7 +248,7 @@ map.save();
 #### Smoke
 
 Self explanatory - spawns smoke particles at a position.
-___
+
 **Documentation**:
 - `startingBeat`: The beat that the smoke should start on.
 - `duration`: For how many beats the smoke should last for.
@@ -275,7 +275,7 @@ map.save();
 #### Snow
 
 Self explanatory - makes it snow! ❄️ 
-___
+
 **Documentation**:
 - `startingBeat`: The beat that the snow should start on.
 - `duration`: For how many beats the snow should last for.
@@ -298,7 +298,7 @@ map.save();
 #### Water
 
 Spawns a flat base that looks like water.
-___
+
 **Documentation**:
 - `startBeat`: The beat that the water should start on.
 - `endBeat`: The beat that the water should end on.
@@ -358,7 +358,7 @@ https://user-images.githubusercontent.com/93472213/159541412-35bd6f43-504d-4f45-
 ### Utility
 #### Give Track
 Gives a track to selected objects.
-___
+
 **Give Notes Track**:<br />
 Gives the notes between desired beats a track.
 
