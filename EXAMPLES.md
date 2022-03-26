@@ -32,6 +32,12 @@ Makes a trail behind notes.
 
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159541195-31b10f1b-c67f-4fa9-80b0-76238df2b669.gif">
 
+#### Floating Debris
+
+Gives the effect of floating debris when you slice a note.
+
+<img width="620" height="auto" src="https://user-images.githubusercontent.com/46404863/160245861-714c8ad6-89e1-404e-9a88-d2ad51e0b5dd.gif">
+
 ### Decoration
 
 #### Fire
