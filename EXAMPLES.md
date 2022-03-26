@@ -5,13 +5,13 @@
 Makes a triangle using walls, can be configurable to make 3D prisms ect.
 ___
 **Documentation**:
-`startTime`: The beat that the triangle should be spawned on.
-`endTime`: The beat that the triangle should disappear.
-`track`: What track the triangle walls should be assigned to.
-`x`: On which X position the triangle should spawn.
-`y`: On which Y position the triangle should spawn.
-`z`: On which Z position the triangle should spawn.
-`length`: How long the triangle walls should be.
+`startTime`: The beat that the triangle should be spawned on.<br />
+`endTime`: The beat that the triangle should disappear.<br />
+`track`: What track the triangle walls should be assigned to.<br />
+`x`: On which X position the triangle should spawn.<br />
+`y`: On which Y position the triangle should spawn.<br />
+`z`: On which Z position the triangle should spawn.<br />
+`length`: How long the triangle walls should be.<br />
 
 Example:
 
