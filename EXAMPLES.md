@@ -6,7 +6,6 @@ Makes a triangle using walls, can be configurable to make 3D prisms ect.
 ___
 **Documentation**:
 `startTime`: The beat that the triangle should be spawned on.
-
 `endTime`: The beat that the triangle should disappear.
 `track`: What track the triangle walls should be assigned to.
 `x`: On which X position the triangle should spawn.
