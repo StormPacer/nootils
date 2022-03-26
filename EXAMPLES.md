@@ -4,7 +4,7 @@
 
 Makes a triangle using walls, can be configurable to make 3D prisms ect.
 ___
-**Documentation**:
+**Documentation**:<br />
 `startTime`: The beat that the triangle should be spawned on.<br />
 `endTime`: The beat that the triangle should disappear.<br />
 `track`: What track the triangle walls should be assigned to.<br />
@@ -33,14 +33,14 @@ map.save();
 
 Makes a square using walls, can be configurable to make 3D cubes ect.
 ___
-**Documentation**:
-`startTime`: The beat that the square should be spawned on.
-`endTime`: The beat that the square should disappear.
-`track`: What track the square walls should be assigned to.
-`x`: On which X position the square should spawn.
-`y`: On which Y position the square should spawn.
-`z`: On which Z position the square should spawn.
-`length`: How long the square walls should be.
+**Documentation**:<br />
+`startTime`: The beat that the square should be spawned on.<br />
+`endTime`: The beat that the square should disappear.<br />
+`track`: What track the square walls should be assigned to.<br />
+`x`: On which X position the square should spawn.<br />
+`y`: On which Y position the square should spawn.<br />
+`z`: On which Z position the square should spawn.<br />
+`length`: How long the square walls should be.<br />
 
 Example:
 ```ts
@@ -61,17 +61,17 @@ map.save();
 
 Makes a circle using walls, can be configurable to make 3D cylinders ect.
 ___
-**Documentation**:
-`startTime`: The beat that the circle should be spawned on.
-`endTime`: The beat that the circle should disappear.
-`track`: What track the walls should be assigned to.
-`radius`: How big the radius of the circle should be.
-`amount`: How many walls should be in the circle.
-`height`: How tall the walls in the circle should be.
-`length`: How long the walls in the circle should be.
-`x`: On which X position the circle should spawn.
-`y`: On which Y position the circle should spawn.
-`z`: On which Z position the circle should spawn.
+**Documentation**:<br />
+`startTime`: The beat that the circle should be spawned on.<br />
+`endTime`: The beat that the circle should disappear.<br />
+`track`: What track the walls should be assigned to.<br />
+`radius`: How big the radius of the circle should be.<br />
+`amount`: How many walls should be in the circle.<br />
+`height`: How tall the walls in the circle should be.<br />
+`length`: How long the walls in the circle should be.<br />
+`x`: On which X position the circle should spawn.<br />
+`y`: On which Y position the circle should spawn.<br />
+`z`: On which Z position the circle should spawn.<br />
 
 Example:
 ```ts
@@ -170,11 +170,11 @@ map.save();
 #### Floating Debris
 Gives the effect of floating debris when you slice a note.
 ___
-**Documentation**:
-`startBeat`: The beat on which the effect should start on.
-`endBeat`: The beat to end the effect on.
-`duration`: How long the debris will last, defaulted to 2. (optional)
-`spread`: How far the debris will go, defaulted to 1. (optional)
+**Documentation**:<br />
+`startBeat`: The beat on which the effect should start on.<br />
+`endBeat`: The beat to end the effect on.<br />
+`duration`: How long the debris will last, defaulted to 2. (optional)<br />
+`spread`: How far the debris will go, defaulted to 1. (optional)<br />
 
 Example:
 ```ts
@@ -196,14 +196,14 @@ map.save();
 
 Self explanatory - spawns fire at a position.
 ___
-**Documentation**:
-`startingBeat`: The beat that the fire should start on.
-`duration`: For how many beats the fire should last for.
-`fireWallDuration`: For how many beats each fire wall should last for.
-`size`: How big the walls should be.
-`x`: The starting X position of the fire.
-`y`: The starting Y position of the fire.
-`z`: The starting Z position of the fire.
+**Documentation**:<br />
+`startingBeat`: The beat that the fire should start on.<br />
+`duration`: For how many beats the fire should last for.<br />
+`fireWallDuration`: For how many beats each fire wall should last for.<br />
+`size`: How big the walls should be.<br />
+`x`: The starting X position of the fire.<br />
+`y`: The starting Y position of the fire.<br />
+`z`: The starting Z position of the fire.<br />
 
 Example:
 ```ts
@@ -223,10 +223,10 @@ map.save();
 
 Self explanatory - makes it rain ☔ 
 ___
-**Documentation**:
-`startingBeat`: The beat that the rain should start on.
-`duration`: For how many beats the rain should last for.
-`amount`: How many walls should be created per beat.
+**Documentation**:<br />
+`startingBeat`: The beat that the rain should start on.<br />
+`duration`: For how many beats the rain should last for.<br />
+`amount`: How many walls should be created per beat.<br />
 
 Example:
 ```ts
@@ -248,14 +248,14 @@ map.save();
 
 Self explanatory - spawns smoke particles at a position.
 ___
-**Documentation**:
-`startingBeat`: The beat that the smoke should start on.
-`duration`: For how many beats the smoke should last for.
-`smokeWallDuration`: For how many beats each smoke wall should last for.
-`size`: How big the walls should be.
-`x`: The starting X position of the smoke.
-`y`: The starting Y position of the smoke.
-`z`: The starting Z position of the smoke.
+**Documentation**:<br />
+`startingBeat`: The beat that the smoke should start on.<br />
+`duration`: For how many beats the smoke should last for.<br />
+`smokeWallDuration`: For how many beats each smoke wall should last for.<br />
+`size`: How big the walls should be.<br />
+`x`: The starting X position of the smoke.<br />
+`y`: The starting Y position of the smoke.<br />
+`z`: The starting Z position of the smoke.<br />
 
 Example:
 ```ts
@@ -275,10 +275,10 @@ map.save();
 
 Self explanatory - makes it snow! ❄️ 
 ___
-**Documentation**:
-`startingBeat`: The beat that the snow should start on.
-`duration`: For how many beats the snow should last for.
-`amount`: How many walls should be created per beat.
+**Documentation**:<br />
+`startingBeat`: The beat that the snow should start on.<br />
+`duration`: For how many beats the snow should last for.<br />
+`amount`: How many walls should be created per beat.<br />
 
 Example:
 ```ts
@@ -290,12 +290,12 @@ Example:
 
 Spawns a flat base that looks like water.
 ___
-**Documentation**:
-`startBeat`: The beat that the water should start on.
-`endBeat`: The beat that the water should end on.
-`track`: What track the water should be assigned to.
-`speed`: How fast the water should move, numbers between 0-5.
-`y`: On which Y position the water should spawn.
+**Documentation**:<br />
+`startBeat`: The beat that the water should start on.<br />
+`endBeat`: The beat that the water should end on.<br />
+`track`: What track the water should be assigned to.<br />
+`speed`: How fast the water should move, numbers between 0-5.<br />
+`y`: On which Y position the water should spawn.<br />
 
 Example:
 ```ts
@@ -306,20 +306,20 @@ Example:
 
 #### Floating Pillars
 ___
-**Documentation**:
-`startBeat`: The beat that the pillars should start on.
-`endBeat`: The beat that the pillars should end on.
-`amountPerRow`: The amount of pillars per row.
-`spacing`: The distance between the pillars.
-`startX`: Where the pillar grid should start on the X axis.
-`height`: How tall the pillars should be.
-`width`: How wide the pillars should be.
-`startZ`: Where the pillar grid should start on the Z axis.
-`track`: The track that the pillars should be assigned to.
-`R`: The red value for the color of the pillars.
-`G`: The green value for the color of the pillars.
-`B`: The blue value for the color of the pillars.
-`A`: The alpha value for the color of the pillars.
+**Documentation**:<br />
+`startBeat`: The beat that the pillars should start on.<br />
+`endBeat`: The beat that the pillars should end on.<br />
+`amountPerRow`: The amount of pillars per row.<br />
+`spacing`: The distance between the pillars.<br />
+`startX`: Where the pillar grid should start on the X axis.<br />
+`height`: How tall the pillars should be.<br />
+`width`: How wide the pillars should be.<br />
+`startZ`: Where the pillar grid should start on the Z axis.<br />
+`track`: The track that the pillars should be assigned to.<br />
+`R`: The red value for the color of the pillars.<br />
+`G`: The green value for the color of the pillars.<br />
+`B`: The blue value for the color of the pillars.<br />
+`A`: The alpha value for the color of the pillars.<br />
 
 Example:
 ```ts
