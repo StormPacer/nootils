@@ -12,6 +12,7 @@ export * from './decor/water'
 
 export * from './notes/ghosty'
 export * from './notes/notetrail'
+export * from './notes/floatingdebris'
 
 export * from './utils/giveTrack'
 
