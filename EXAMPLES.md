@@ -375,7 +375,7 @@ wallBorderSize(5, 4, 5);
 
 map.save();
 ```
-https://user-images.githubusercontent.com/76397825/164314851-7a86ec3b-c415-4a87-a936-8e1f41563eee.gif
+<img width="620" height="auto" src="https://user-images.githubusercontent.com/76397825/164314851-7a86ec3b-c415-4a87-a936-8e1f41563eee.gif">
 
 ### Utility
 #### Give Track
