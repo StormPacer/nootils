@@ -359,7 +359,7 @@ https://user-images.githubusercontent.com/93472213/159541412-35bd6f43-504d-4f45-
 Changes the size of a wall border.
 
 **Documentation**:
-- `size`: The size you want the border to have (1 = diffault size).
+- `size`: The size you want the border to have (1 = default size).
 - `startTime`: The beat of the FIRST wall you want to change the border of (will start at the first wall if it is left 'undefined').
 - `endTime`: The beat of the LAST wall you want to change the border of (will end at the last wall if it is left 'undefined').
 - `track`: Assigns a track to the filtered walls (optional).
