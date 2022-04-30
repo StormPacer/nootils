@@ -355,6 +355,28 @@ https://user-images.githubusercontent.com/93472213/159541412-35bd6f43-504d-4f45-
 
 <small>Note - this effect was too big to put in a gif - excuse the video for now.</small>
 
+#### Change Wall Border
+Changes the size of a wall border.
+
+**Documentation**:
+- `size`: The size you want the border to have (1 = default size).
+- `startTime`: The beat of the FIRST wall you want to change the border of (will start at the first wall if it is left 'undefined').
+- `endTime`: The beat of the LAST wall you want to change the border of (will end at the last wall if it is left 'undefined').
+- `track`: Assigns a track to the filtered walls (optional).
+
+Example:
+```ts
+import * as Remapper from 'swifter_remapper'
+
+const map = new Remapper.Difficulty("EasyStandard.dat", "ExpertPlusStandard.dat");
+
+wallBorderSize(0.1, 2, 3);
+wallBorderSize(5, 4, 5);
+
+map.save();
+```
+<img width="620" height="auto" src="https://user-images.githubusercontent.com/76397825/164314851-7a86ec3b-c415-4a87-a936-8e1f41563eee.gif">
+
 ### Utility
 #### Give Track
 Gives a track to selected objects.

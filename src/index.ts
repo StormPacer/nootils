@@ -3,6 +3,7 @@ Nootils - Made by StormPacer and cal117 and curated by the community.
 Powered by Remapper
  */
 
+export * from './decor/wallBorderSize'
 export * from './decor/floatingPillars'
 export * from './decor/fire'
 export * from './decor/rain'
