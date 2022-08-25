@@ -79,7 +79,7 @@ for await (const file of Deno.readDir(templatePath)) {
 
     // Ignore files if need be (we dont talk about this, i tried a for loop but it ehhhhh)
     if (!includeMapFiles && path.extname(file.name) == optionalFiles[0]) continue;
-    if (!includeMapFiles && path.extname(file.name) == optionalFiles[1]) continue;
+    if (!includeMapFiles && path.dirname(file.name) == optionalFiles[1]) continue;
     if (!includeMapFiles && path.extname(file.name) == optionalFiles[2]) continue;
     if (!includeMapFiles && path.extname(file.name) == optionalFiles[3]) continue;
 
