@@ -2,6 +2,8 @@
 <hr>
 <div align="left"> 
 
+# THIS README IS OUTDATED, THIS INSTALLATION WONT WORK
+
 The all around modchart helper that contains functions and utilities created by the community.
 
 These scripts are designed to be used with [Remapper](https://github.com/Swifter1243/ReMapper).
