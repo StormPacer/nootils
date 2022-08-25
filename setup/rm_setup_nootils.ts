@@ -67,7 +67,7 @@ try {
 await Deno.stat(templatePath)
 
 // now copy to path
-const ignoredFiles = ["setup", ".git"]
+const ignoredFiles = ["setup", ".git", "README.md"]
 
 const tasks: Promise<void>[] = []
 
