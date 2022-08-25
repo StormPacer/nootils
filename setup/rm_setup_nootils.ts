@@ -70,17 +70,18 @@ await Deno.stat(templatePath)
 
 // now copy to path
 const ignoredFiles = ["setup", ".git", "README.md"]
+const optionalFiles = [".dat", ".vscode", ".ts", ".json"];
 
 const tasks: Promise<void>[] = []
 
 for await (const file of Deno.readDir(templatePath)) {
     if (ignoredFiles.includes(file.name)) continue
 
-    // Ignore files if need be (we dont talk about this)
-    if (!includeMapFiles && path.extname(file.name) == ".dat") continue;
-    if (!includeMapFiles && path.extname(file.name) == ".vscode") continue;
-    if (!includeMapFiles && path.extname(file.name) == ".ts") continue;
-    if (!includeMapFiles && path.extname(file.name) == ".json") continue;
+    // Ignore files if they've been made already
+    for (let i = 1; i <= 4; i++) {
+        const optionalFile = optionalFiles[i-1];
+        if (!includeMapFiles && path.extname(file.name) == optionalFile) continue;
+    }
 
     const src = path.join(templatePath, file.name)
     const dest = path.join(destFolder, file.name)
