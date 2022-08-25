@@ -25,7 +25,7 @@ if (!userDir) {
 const remapperDirectory = path.join(userDir, "remapper_setup")
 
 if (!ref) {
-    const latestRelease = await fetch("https://api.github.com/repos/Swifter1243/ReMapper-Setup/releases/latest", {
+    const latestRelease = await fetch("https://api.github.com/repos/Nasafrasa/nootils-Remapper-Setup/releases/latest", {
         headers: {
             "Accept": "application/vnd.github+json"
         }
