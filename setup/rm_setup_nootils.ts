@@ -1,3 +1,5 @@
+// From Swifter's Code
+
 // imports from v0.149.0 of std, never changes
 
 import cloneTemplateToCache from "./clone.ts";
@@ -74,8 +76,11 @@ const tasks: Promise<void>[] = []
 for await (const file of Deno.readDir(templatePath)) {
     if (ignoredFiles.includes(file.name)) continue
 
-    // Ignore .dat files if need be
+    // Ignore files if need be (we dont talk about this)
     if (!includeMapFiles && path.extname(file.name) == ".dat") continue;
+    if (!includeMapFiles && path.extname(file.name) == ".vscode") continue;
+    if (!includeMapFiles && path.extname(file.name) == ".ts") continue;
+    if (!includeMapFiles && path.extname(file.name) == ".json") continue;
 
     const src = path.join(templatePath, file.name)
     const dest = path.join(destFolder, file.name)
