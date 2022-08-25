@@ -77,11 +77,11 @@ const tasks: Promise<void>[] = []
 for await (const file of Deno.readDir(templatePath)) {
     if (ignoredFiles.includes(file.name)) continue
 
-    // Ignore files if they've been made already
-    for (let i = 1; i <= 4; i++) {
-        const optionalFile = optionalFiles[i-1];
-        if (!includeMapFiles && path.extname(file.name) == optionalFile) continue;
-    }
+    // Ignore files if need be (we dont talk about this, i tried a for loop but it ehhhhh)
+    if (!includeMapFiles && path.extname(file.name) == optionalFiles[0]) continue;
+    if (!includeMapFiles && path.extname(file.name) == optionalFiles[1]) continue;
+    if (!includeMapFiles && path.extname(file.name) == optionalFiles[2]) continue;
+    if (!includeMapFiles && path.extname(file.name) == optionalFiles[3]) continue;
 
     const src = path.join(templatePath, file.name)
     const dest = path.join(destFolder, file.name)
