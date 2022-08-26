@@ -16,8 +16,6 @@ In your map project folder, run the following in the terminal:
 
 ```
 deno install --allow-all -f --reload https://raw.githubusercontent.com/StormPacer/nootils/main/setup/nootils_setup.ts
-
-# This would have to be changed after PR
 ```
 
 And then after that to install Nootils into your map folder, run this:
