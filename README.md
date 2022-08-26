@@ -10,7 +10,7 @@ Checkout all of the features [here](https://github.com/StormPacer/nootils/wiki/F
 
 ## Installation
 
-Make to already have ReMapper installed in your map folder, if you need help on that, [click here!]()
+Make to already have ReMapper installed in your map folder.
 
 In your map project folder, run the following in the terminal:
 

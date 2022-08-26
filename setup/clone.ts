@@ -5,7 +5,7 @@ import { streams } from "./deps.ts";
 export default async function cloneTemplateToCache(path: string, ref: string): Promise<void> {
     try {
         const process = Deno.run({
-            "cmd": ["git", "clone", "--depth", "1", `-o`, ref, `https://github.com/Nasafrasa/nootils-Remapper-Setup.git`, path], // This would have to be changed after PR
+            "cmd": ["git", "clone", "--depth", "1", `-o`, ref, `https://github.com/StormPacer/nootils.git`, path],
             stdout: "piped",
             stderr: "piped",
         })

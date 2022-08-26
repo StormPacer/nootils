@@ -26,7 +26,7 @@ if (!userDir) {
 const remapperDirectory = path.join(userDir, "remapper_setup")
 
 if (!ref) {
-    const latestRelease = await fetch("https://api.github.com/repos/Nasafrasa/nootils-Remapper-Setup/releases/latest", { // This would have to be changed after PR
+    const latestRelease = await fetch("https://api.github.com/repos/StormPacer/nootils/releases/latest", {
         headers: {
             "Accept": "application/vnd.github+json"
         }
