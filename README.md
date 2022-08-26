@@ -26,7 +26,7 @@ nootils_setup
 After that replace all of the code in `script.ts` with this (unless you already have code, just make sure your on 2.1.0 and you have the import statment for Nootils):
 
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts" // MAKE SURE THIS IS ON THE LATEST REMAPPER VERSION!!!!!!!!!
+import { Difficulty } from "https://deno.land/x/remapper@2.0.2/src/mod.ts" // MAKE SURE THIS IS ON 2.0.2!!!!!!!!!
 import { } from "./nootils/index.ts"
 
 const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
@@ -35,7 +35,7 @@ const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
 map.save();
 ```
-If the import statments have errors, just restart VSCode.
+If both import statments have errors, just restart VSCode.
 
 
 ## Usage
@@ -45,15 +45,15 @@ You can import all functions Nootils provides by using the following import stat
 ```ts
 import * as Nootils from "./nootils/index.ts"
 
-Nootils.Rain(0, 20, 300)
+Nootils.Rain(0, 20, 300);
 ```
 
 If you want to use individual functions instead, you can import each function as you need like so:
 
 ```ts
-import {Rain} from "./nootils/index.ts"
+import { Rain } from "./nootils/index.ts"
 
-Rain(0, 20, 300)
+Rain(0, 20, 300);
 ```
 
 ## Contributing
