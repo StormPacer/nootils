@@ -1,4 +1,4 @@
-// From Swifter's Code
+// From Swifter's Repo
 
 // imports from v0.149.0 of std, never changes
 
@@ -6,7 +6,6 @@ import cloneTemplateToCache from "./clone.ts";
 import { configDir, path, fs } from "./deps.ts";
 
 const name = Deno.args[0] ?? "."
-const includeMapFiles = Deno.args.some(e => e === "--map" || e === "-m") || Deno.args[0]
 
 const refIndex = Deno.args.findIndex(e => e === "--version" || e === "-v")
 let ref = refIndex !== -1 ? Deno.args[refIndex + 1] : undefined
@@ -27,7 +26,7 @@ if (!userDir) {
 const remapperDirectory = path.join(userDir, "remapper_setup")
 
 if (!ref) {
-    const latestRelease = await fetch("https://api.github.com/repos/Nasafrasa/nootils-Remapper-Setup/releases/latest", {
+    const latestRelease = await fetch("https://api.github.com/repos/Nasafrasa/nootils-Remapper-Setup/releases/latest", { // This would have to be changed after PR
         headers: {
             "Accept": "application/vnd.github+json"
         }

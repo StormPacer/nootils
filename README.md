@@ -4,8 +4,6 @@
 
 The all around modchart helper that contains functions and utilities created by the community.
 
-Original made by StormPacer [here](https://github.com/StormPacer/nootils).
-
 These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
   
 Checkout all of the features [here](https://github.com/Nasafrasa/nootils-Remapper-Setup/wiki/Features).
@@ -18,6 +16,8 @@ In your map project folder, run the following in the terminal:
 
 ```
 deno install --allow-all -f --reload https://raw.githubusercontent.com/Nasafrasa/nootils-Remapper-Setup/main/setup/nootils_setup.ts
+
+# This would have to be changed after PR
 ```
 
 And then after that to install Nootils into your map folder, run this:
@@ -25,13 +25,13 @@ And then after that to install Nootils into your map folder, run this:
 nootils_setup
 ```
 
-After that replace all of the code in `script.ts` with this (unless you already have code, just make sure your on 2.1.0 and you have the import statment for Nootils):
+After that replace all of the code in `script.ts` with this (unless you already have code, just make sure you're on 2.1.0 and you have the import statment for Nootils):
 
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.0.2/src/mod.ts" // MAKE SURE THIS IS ON 2.0.2!!!!!!!!!
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 import { } from "./nootils/index.ts"
 
-const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
+const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
 // SCRIPT
 
