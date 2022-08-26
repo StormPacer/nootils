@@ -4,6 +4,8 @@
 
 The all around modchart helper that contains functions and utilities created by the community.
 
+Original made by StormPacer [here](https://github.com/StormPacer/nootils).
+
 These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
   
 Checkout all of the features [here](https://github.com/Nasafrasa/nootils-Remapper-Setup/wiki/Features).
