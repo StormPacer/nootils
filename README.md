@@ -2,45 +2,41 @@
 <hr>
 <div align="left"> 
 
-# THIS WIKI IS OUTDATED, THIS INSTALLATION WONT WORK
-
-Important thing I have to explain
-`deno install --allow-all -f --reload https://raw.githubusercontent.com/Nasafrasa/nootils-Remapper-Setup/main/setup/nootils_setup.ts`
-
 The all around modchart helper that contains functions and utilities created by the community.
 
-These scripts are designed to be used with [Remapper](https://github.com/Swifter1243/ReMapper).
+These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
   
-Checkout all of the features [here.](https://github.com/Nasafrasa/nootils-Remapper-Setup/wiki/Features)
+Checkout all of the features [here](https://github.com/Nasafrasa/nootils-Remapper-Setup/wiki/Features).
 
 ## Installation
 
-In your map project folder, run the following
+Make to already have ReMapper installed in your map folder, if you need help on that, [click here!]()
 
-```bash
-$ npm install nootils
-# or if you use yarn
-$ yarn add nootils
+In your map project folder, run the following in the terminal:
+
+```
+deno install --allow-all -f --reload https://raw.githubusercontent.com/Nasafrasa/nootils-Remapper-Setup/main/setup/nootils_setup.ts
 ```
 
-## Usage
+And then after that to install Nootils into your map folder, run this:
+```
+nootils_setup
+```
 
-Nootils should be used after a map is opened by Remapper, an example can be seen down below:
+After that replace all of the code in `script.ts` with this (unless you already have code, just make sure your on 2.1.0 and you have the import statment for Nootils):
 
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts" // MAKE SURE THIS IS ON THE LATEST REMAPPER VERSION!!!!!!!!!
+import { } from "./nootils/index.ts"
 
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
-// Start of script, insert your script below this line.
-
-Nootils.Rain(0, 20, 300) // This will add the rain effect to the opened map using magic (Remapper.activeDiff)
-
-// End of script, insert your script above this line.
+// SCRIPT
 
 map.save();
 ```
+
+## Usage
 
 You can import all functions Nootils provides by using the following import statement:
 
