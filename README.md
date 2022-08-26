@@ -41,7 +41,7 @@ map.save();
 You can import all functions Nootils provides by using the following import statement:
 
 ```ts
-import * as Nootils from 'nootils'
+import * as Nootils from "./nootils/index.ts"
 
 Nootils.Rain(0, 20, 300)
 ```
@@ -49,7 +49,7 @@ Nootils.Rain(0, 20, 300)
 If you want to use individual functions instead, you can import each function as you need like so:
 
 ```ts
-import {Rain} from 'nootils'
+import {Rain} from "./nootils/index.ts"
 
 Rain(0, 20, 300)
 ```
