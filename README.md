@@ -35,6 +35,8 @@ const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
 map.save();
 ```
+If the import statments have errors, just restart VSCode.
+
 
 ## Usage
 
