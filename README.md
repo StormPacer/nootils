@@ -6,7 +6,7 @@ The all around modchart helper that contains functions and utilities created by 
 
 These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
   
-Checkout all of the features [here](https://github.com/Nasafrasa/nootils-Remapper-Setup/wiki/Features).
+Checkout all of the features [here](https://github.com/StormPacer/nootils/wiki/Features).
 
 ## Installation
 
@@ -15,7 +15,7 @@ Make to already have ReMapper installed in your map folder, if you need help on 
 In your map project folder, run the following in the terminal:
 
 ```
-deno install --allow-all -f --reload https://raw.githubusercontent.com/Nasafrasa/nootils-Remapper-Setup/main/setup/nootils_setup.ts
+deno install --allow-all -f --reload https://raw.githubusercontent.com/StormPacer/nootils/main/setup/nootils_setup.ts
 
 # This would have to be changed after PR
 ```
