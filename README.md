@@ -29,7 +29,7 @@ After that replace all of the code in `script.ts` with this (unless you already 
 import { Difficulty } from "https://deno.land/x/remapper@2.0.2/src/mod.ts" // MAKE SURE THIS IS ON 2.0.2!!!!!!!!!
 import { } from "./nootils/index.ts"
 
-const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
+const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 
 // SCRIPT
 
