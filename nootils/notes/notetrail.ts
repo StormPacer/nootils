@@ -1,5 +1,6 @@
-import * as Remapper from 'swifter_remapper'
-import {Random} from '../internal/random';
+import {Random} from '../internal/random.ts';
+
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 enum NoteTrailType {
     BLOCK = "block",
@@ -20,7 +21,7 @@ function InternalNoteTrail(filterednotes: Remapper.Note[], length: number = 5, t
 			dupe.fake = true;
 			dupe.animation._position = [[Random(-0.2, 0.2), 0, i * 4, 0.4], [0, 0, 0, 0.7]];
 			dupe.animation._localRotation = [[Random(0, 180), Random(0, 180), Random(0, 180), 0], [0, 0, 0, 0.3]];
-			if (type.valueOf() == "note" || type.valueOf() == "both") dupe.animation._dissolve = [[0.1, 0], [0, 1, Remapper.EASE.IN_OUT_CUBIC]];
+			if (type.valueOf() == "note" || type.valueOf() == "both") dupe.animation._dissolve = [[0.1, 0], [0, 1, "easeInOutCubic"]];
 			if (type.valueOf() == "arrow" || type.valueOf() == "both") dupe.animation._dissolveArrow = [[0.1, 0]];
 			dupe.push();
 		}

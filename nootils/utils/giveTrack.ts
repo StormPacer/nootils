@@ -1,4 +1,4 @@
-import * as Remapper from 'swifter_remapper'
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * Gives the notes between desired beats a track.
@@ -26,7 +26,7 @@ function GiveNotesTrack(track: string, t1: number, t2: number) {
  */
 
 function GiveWallsTrack(track: string, t1: number, t2: number) {
-    const filteredwalls = Remapper.activeDiff.obstacles.filter(o => o.time >= t1 && o.time <= t2)
+    const filteredwalls = Remapper.activeDiff.walls.filter(o => o.time >= t1 && o.time <= t2)
     filteredwalls.forEach(wall => {
         if (!wall.customData) wall.customData = {};
         if (Array.isArray(wall.customData._track)) wall.customData._track.push(track)

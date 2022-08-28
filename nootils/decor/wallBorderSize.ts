@@ -1,4 +1,4 @@
-import * as Remapper from 'swifter_remapper'
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * Changes the border size of the walls between the beats.
@@ -11,7 +11,7 @@ import * as Remapper from 'swifter_remapper'
  */
 
 function wallBorderSize(size: number = 1, startTime: number = Number.NEGATIVE_INFINITY, endTime: number = Number.POSITIVE_INFINITY, track?: string){
-	const filteredwalls = Remapper.activeDiff.obstacles.filter(w => w.time >= startTime && w.time <= endTime);
+	const filteredwalls = Remapper.activeDiff.walls.filter(w => w.time >= startTime && w.time <= endTime);
 	filteredwalls.forEach(wall => {
 		if (!wall.customData) wall.customData = {};
 		if (!wall.position) wall.position = [wall.lineIndex - 2, wall.type === 0 ? 0 : 1.5];

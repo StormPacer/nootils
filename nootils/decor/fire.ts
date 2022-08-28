@@ -1,6 +1,6 @@
-import {Random} from "../internal/random"
+import {Random} from '../internal/random.ts';
 
-import * as Remapper from 'swifter_remapper'
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * Spawns in walls that resemble a fire.

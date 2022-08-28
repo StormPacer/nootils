@@ -4,53 +4,56 @@
 
 The all around modchart helper that contains functions and utilities created by the community.
 
-These scripts are designed to be used with [Remapper](https://github.com/Swifter1243/ReMapper).
+These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
   
-Checkout examples of all the visible effects in [EXAMPLES.md](EXAMPLES.md)
+Checkout all of the features [here](https://github.com/StormPacer/nootils/wiki/Features).
 
 ## Installation
 
-In your map project folder, run the following
+Make to already have ReMapper installed in your map folder.
 
-```bash
-$ npm install nootils
-# or if you use yarn
-$ yarn add nootils
+In your map project folder, run the following in the terminal:
+
+```
+deno install --allow-all -f --reload https://raw.githubusercontent.com/StormPacer/nootils/main/setup/nootils_setup.ts
 ```
 
-## Usage
+And then after that to install Nootils into your map folder, run this:
+```
+nootils_setup
+```
 
-Nootils should be used after a map is opened by Remapper, an example can be seen down below:
+After that replace all of the code in `script.ts` with this (unless you already have code, just make sure you're on 2.1.0 and you have the import statment for Nootils):
 
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { } from "./nootils/index.ts"
 
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
-// Start of script, insert your script below this line.
-
-Nootils.Rain(0, 20, 300) // This will add the rain effect to the opened map using magic (Remapper.activeDiff)
-
-// End of script, insert your script above this line.
+// SCRIPT
 
 map.save();
 ```
+If both import statments have errors, just restart VSCode.
+
+
+## Usage
 
 You can import all functions Nootils provides by using the following import statement:
 
 ```ts
-import * as Nootils from 'nootils'
+import * as Nootils from "./nootils/index.ts"
 
-Nootils.Rain(0, 20, 300)
+Nootils.Rain(0, 20, 300);
 ```
 
 If you want to use individual functions instead, you can import each function as you need like so:
 
 ```ts
-import {Rain} from 'nootils'
+import { Rain } from "./nootils/index.ts"
 
-Rain(0, 20, 300)
+Rain(0, 20, 300);
 ```
 
 ## Contributing

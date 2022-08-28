@@ -1,6 +1,6 @@
-import * as Remapper from 'swifter_remapper'
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
-function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
+function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: number, easing: Remapper.EASE = "easeInOutCubic", transparent?: boolean) {
     const positions: any = [[0, 0, 0, 0]];
     let positive = false;
     for (let i = speed + 1; i > 0; i--) {
@@ -33,7 +33,7 @@ function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: num
  * @param transparent Should only the arrow be visible?
  * @author cal117
  */
-function GhostyTrack(track: string, speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
+function GhostyTrack(track: string, speed: number, maxY: number, easing: Remapper.EASE = "easeInOutCubic", transparent?: boolean) {
     const filteredNotes = Remapper.activeDiff.notes.filter(note => {
         if(!note.customData) note.customData = {};
         if(Array.isArray(note.customData._track)) return note.customData._track.includes(track);
@@ -53,7 +53,7 @@ function GhostyTrack(track: string, speed: number, maxY: number, easing: Remappe
  * @param transparent Should only the arrow be visible?
  * @author cal117
  */
-function Ghosty(startBeat: number, endBeat: number, speed: number, maxY: number, easing: Remapper.EASE = Remapper.EASE.IN_OUT_CUBIC, transparent?: boolean) {
+function Ghosty(startBeat: number, endBeat: number, speed: number, maxY: number, easing: Remapper.EASE = "easeInOutCubic", transparent?: boolean) {
     const filteredNotes = Remapper.activeDiff.notes.filter(n => n.time >= startBeat && n.time <= endBeat);
     InternalGhosty(filteredNotes, speed, maxY, easing, transparent);
 }

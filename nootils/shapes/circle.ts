@@ -1,4 +1,4 @@
-import * as Remapper from "swifter_remapper"
+import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * Spawns a wall circle that you can later animate with AnimateTrack, adapted from Reddek's function.
