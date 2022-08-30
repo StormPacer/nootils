@@ -1,11 +1,11 @@
-<div align="center"><img align="center" src="https://github.com/StormPacer/nootils/blob/main/logo.png?raw=true" /></div>
+<div align="center"><img align="center" src="https://user-images.githubusercontent.com/86539501/187082960-6edf03b8-78bc-4437-9eb4-453bf527d35d.png" /></div>
 <hr>
 <div align="left"> 
 
 The all around modchart helper that contains functions and utilities created by the community.
 
 These scripts are designed to be used with [ReMapper](https://github.com/Swifter1243/ReMapper).
-  
+
 Checkout all of the features [here](https://github.com/StormPacer/nootils/wiki/Features).
 
 ## Installation
