@@ -10,12 +10,14 @@ export * from './decor/rain.ts'
 export * from './decor/smoke.ts'
 export * from './decor/snow.ts'
 export * from './decor/water.ts'
+export * from './stars.ts'
 
 export * from './notes/ghosty.ts'
 export * from './notes/notetrail.ts'
 export * from './notes/floatingdebris.ts'
 
 export * from './utils/giveTrack.ts'
+export * from './utils/despawn.ts'
 
 export * from './shapes/triangle.ts'
 export * from './shapes/square.ts'
