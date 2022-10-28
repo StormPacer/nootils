@@ -17,7 +17,6 @@ export * from './notes/notetrail.ts'
 export * from './notes/floatingdebris.ts'
 
 export * from './utils/giveTrack.ts'
-export * from './utils/despawn.ts'
 
 export * from './shapes/triangle.ts'
 export * from './shapes/square.ts'
