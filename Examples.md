@@ -16,11 +16,14 @@ Makes a triangle using walls, can be configurable to make 3D prisms ect.
 Example:
 
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
+
 // Makes a triangle that lasts 10 beats.
 Nootils.Triangle(0, 10, "triangleTrack", 0, 0, 5, 10)
+
 map.save();
 ```
 
@@ -41,9 +44,10 @@ Makes a square using walls, can be configurable to make 3D cubes ect.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Makes a square that lasts 10 beats.
 Nootils.Square(0, 10, "squareTrack", 0, 0, 5, 10) 
 map.save();
@@ -69,12 +73,13 @@ Makes a circle using walls, can be configurable to make 3D cylinders ect.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
- 
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Makes a circle that lasts 10 beats, with a radius/scale of 5.
 Nootils.Circle(0, 10, "circleTrack", 5, 1, 5, 10, 0, 0, 5)
+
 map.save();
 ```
 
@@ -108,13 +113,15 @@ Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("INPUT.dat", "OUTPUT.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Apply's Ghosty effect to notes between beat 0 to 10.
-Nootils.Ghosty(0, 10, 1, 2, Remapper.EASE.OUT_CUBIC, true)
+Nootils.Ghosty(0, 10, 1, 2, "easeOutCubic", true)
 // Apply's Ghost effect to "ghostyTrack"
-Nootils.GhostyTrack("ghostyTrack", 1, 2, Remapper.EASE.OUT_CUBIC, true)
+Nootils.GhostyTrack("ghostyTrack", 1, 2, "easeOutCubic", true)
+
 map.save();
 ```
 
@@ -141,13 +148,15 @@ Apply's the Note Trail effect to a track.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Adds a Note Trail effect to notes between beat 0 to 10.
 Nootils.NoteTrail(0, 10, 3, Nootils.NoteTrailType.ARROW)
 // Adds a Note Trail effect to "noteTrailTrack"
 Nootils.NoteTrailTrack("noteTrailTrack", 3, Nootils.NoteTrailType.ARROW)
+
 map.save();
 ```
 
@@ -164,11 +173,13 @@ Gives the effect of floating debris when you slice a note.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Apply's the Floating Debris effect to notes between beat 0 to 10, with a duration of 2, and spread/distance of 1.
 Nootils.FloatingDebris(0, 10, 2, 1)
+
 map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/46404863/160245861-714c8ad6-89e1-404e-9a88-d2ad51e0b5dd.gif">
@@ -190,11 +201,13 @@ Self explanatory - spawns fire at a position.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Spawns a fire at beat 0, that lasts until beat 10, with a size of 5.
 Nootils.Fire(0, 10, 2, 5, 0, 0, 5)
+
 map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159535140-b3210e8e-6e14-47e1-b7ae-d5fc381c2033.gif">
@@ -210,11 +223,13 @@ Self explanatory - makes it rain ☔
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Adds rain through beat 0 to 10, with an amount of 50.
 Nootils.Rain(0, 10, 50)
+
 map.save();
 ```
 
@@ -236,11 +251,13 @@ Self explanatory - spawns smoke particles at a position.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Adds smoke through beat 0 to 10, with a size of 5.
 Nootils.Smoke(0, 10, 2, 5, 0, 0, 5)
+
 map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159532960-b8edac50-4d9b-4784-a0e1-42e4e9647253.gif">
@@ -256,9 +273,10 @@ Self explanatory - makes it snow! ❄️
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Adds snow between beats 0 to 10, with an amount of 50.
 Nootils.Snow(0, 10, 50)
 map.save();
@@ -278,11 +296,13 @@ Spawns a flat base that looks like water.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Adds water between beats 0 to 10, on the track "waterTrack", with a speed of 1 and a Y value of 0.
 Nootils.Water(0, 10, "waterTrack", 1, 0)
+
 map.save();
 ```
 <img width="620" height="auto" src="https://user-images.githubusercontent.com/93472213/159539607-9291fa45-5953-495b-89f0-724fd779fda6.png">
@@ -306,11 +326,13 @@ map.save();
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 // Add's floating pillars between beats 0 and 10. Theres alot of parameters in this effect, so I suggest you mess around with on your own.
 Nootils.FloatingPillars(0, 10, 10, 1, 0, 10, 10, 0, "pillarsTrack", 1, 1, 1, 1)
+
 map.save();
 ```
 Spawns in floating pillars on the desired positions and spacing.
@@ -330,8 +352,10 @@ Changes the size of a wall border.
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-const map = new Remapper.Difficulty("EasyStandard.dat", "ExpertPlusStandard.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
 wallBorderSize(0.1, 2, 3);
 wallBorderSize(5, 4, 5);
 map.save();
@@ -373,9 +397,10 @@ Gives the notes between desired beats a track. Separates by type
 
 Example:
 ```ts
-import * as Remapper from 'swifter_remapper'
-import * as Nootils from 'nootils'
-const map = new Remapper.Difficulty("ExpertPlusLawless.dat");
+import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as nootils from './nootils/index.ts'
+
+const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
  
 // Gives all notes between beat 0 to 10, the track "noteTrack"
 Nootils.GiveNotesTrack("noteTrack", 0, 10)
@@ -385,5 +410,6 @@ Nootils.GiveWallsTrack("wallTrack", 0, 10)
 Nootils.GiveNotesOnLanesTrack("line1Track", "line2Track", "line3Track", "line4Track", 0, 10)
 // Gives all notes between 0 and 10 there corresponding track based off of their type/color.
 Nootils.GiveTypeNotesTrack("type0Track", "type1Track", 0, 10)
+
 map.save();
 ```
