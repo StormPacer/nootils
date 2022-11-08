@@ -21,7 +21,6 @@ export function Smoke(startingBeat: number, duration: number, smokeWallDuration:
 
         wall.customData = {
             _color: [0.1, 0.1, 0.1, 0.1],
-            _fake: true,
             _interactable: false,
             _scale: [size, size, size],
             _animation: {
@@ -31,6 +30,6 @@ export function Smoke(startingBeat: number, duration: number, smokeWallDuration:
             }
         };
 
-        wall.push();
+        wall.push(true);
     }
 }
