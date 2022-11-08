@@ -19,7 +19,6 @@ export function Rain(startingBeat: number, duration: number, amount: number) {
 
         wall.customData = {
             _color: [0.419, 0.513, 1, 0.1],
-            _fake: true,
             _interactable: false,
             _scale: [0.1, 6, 0.1],
             _animation: {
@@ -28,6 +27,6 @@ export function Rain(startingBeat: number, duration: number, amount: number) {
             }
         };
 
-        wall.push();
+        wall.push(true);
     }
 }
