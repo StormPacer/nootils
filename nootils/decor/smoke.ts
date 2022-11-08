@@ -1,6 +1,5 @@
 import {Random} from '../internal/random.ts';
-
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.0.0/src/mod.ts"
 
 /**
  * Spawns in walls that resemble smoke
