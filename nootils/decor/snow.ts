@@ -1,6 +1,6 @@
 import {Random} from "../internal/random.ts"
 
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.0.0/src/mod.ts"
 
 /**
  * Spawns in walls that resemble snow.
@@ -20,7 +20,6 @@ export function Snow(startingBeat: number, duration: number, amount: number) {
 
         wall.customData = {
             _color: [1, 1, 1, 4],
-            _fake: true,
             _interactable: false,
             _scale: [0.2, 0.2, 0.2],
             _animation: {
@@ -29,6 +28,6 @@ export function Snow(startingBeat: number, duration: number, amount: number) {
             }
         };
 
-        wall.push();
+        wall.push(true);
     }
 }
