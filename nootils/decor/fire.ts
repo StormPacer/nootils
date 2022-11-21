@@ -1,6 +1,6 @@
 import {Random} from '../internal/random.ts';
 
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.0.0/src/mod.ts"
 
 /**
  * Spawns in walls that resemble a fire.
@@ -19,7 +19,6 @@ export function Fire(startingBeat: number, duration: number, fireWallDuration: n
 
         let wall = new Remapper.Wall(startingBeat + (i / 6), fireWallDuration, 1, 0, 0);
         wall.customData = {
-            _fake: true,
             _interactable: false,
             _scale: [size, size, size],
             _animation: {
@@ -30,6 +29,6 @@ export function Fire(startingBeat: number, duration: number, fireWallDuration: n
             }
         };
 
-        wall.push();
+        wall.push(true);
     }
 }

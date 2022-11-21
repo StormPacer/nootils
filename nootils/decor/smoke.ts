@@ -1,6 +1,5 @@
 import {Random} from '../internal/random.ts';
-
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.0.0/src/mod.ts"
 
 /**
  * Spawns in walls that resemble smoke
@@ -21,7 +20,6 @@ export function Smoke(startingBeat: number, duration: number, smokeWallDuration:
 
         wall.customData = {
             _color: [0.1, 0.1, 0.1, 0.1],
-            _fake: true,
             _interactable: false,
             _scale: [size, size, size],
             _animation: {
@@ -31,6 +29,6 @@ export function Smoke(startingBeat: number, duration: number, smokeWallDuration:
             }
         };
 
-        wall.push();
+        wall.push(true);
     }
 }
