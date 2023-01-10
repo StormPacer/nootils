@@ -1,4 +1,4 @@
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 
 function InternalGhosty(filteredNotes: Remapper.Note[], speed: number, maxY: number, easing: Remapper.EASE = "easeInOutCubic", transparent?: boolean) {
     const positions: any = [[0, 0, 0, 0]];
