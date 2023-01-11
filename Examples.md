@@ -16,7 +16,7 @@ Makes a triangle using walls, can be configurable to make 3D prisms ect.
 Example:
 
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -44,7 +44,7 @@ Makes a square using walls, can be configurable to make 3D cubes ect.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -73,7 +73,7 @@ Makes a circle using walls, can be configurable to make 3D cylinders ect.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -113,7 +113,7 @@ Applys the Ghosty effect to all notes from `startBeat` to `endBeat`.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -148,7 +148,7 @@ Apply's the Note Trail effect to a track.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -173,7 +173,7 @@ Gives the effect of floating debris when you slice a note.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -201,7 +201,7 @@ Self explanatory - spawns fire at a position.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -223,7 +223,7 @@ Self explanatory - makes it rain ☔
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -251,7 +251,7 @@ Self explanatory - spawns smoke particles at a position.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -273,7 +273,7 @@ Self explanatory - makes it snow! ❄️
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -296,7 +296,7 @@ Spawns a flat base that looks like water.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -326,7 +326,7 @@ map.save();
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -352,7 +352,7 @@ Changes the size of a wall border.
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");
@@ -397,7 +397,7 @@ Gives the notes between desired beats a track. Separates by type
 
 Example:
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 import * as nootils from './nootils/index.ts'
 
 const map = new Difficulty("INPUT.dat", "OUTPUT.dat");

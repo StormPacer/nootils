@@ -26,7 +26,7 @@ nootils_setup
 After that replace all of the code in `script.ts` with this (unless you already have code, just make sure you're on 2.1.0 and you have the import statment for Nootils):
 
 ```ts
-import { Difficulty } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import { Difficulty } from ""https://deno.land/x/remapper@3.1.1/src/mod.ts""
 import { } from "./nootils/index.ts"
 
 const map = new Difficulty("ExpertPlusLawless", "ExpertPlusStandard");

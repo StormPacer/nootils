@@ -1,4 +1,4 @@
-import * as Remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 
 /**
  * Spawns a wall square that you can later animate with AnimateTrack.

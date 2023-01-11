@@ -1,6 +1,6 @@
 import {Random} from "../internal/random.ts"
 
-import * as Remapper from "https://deno.land/x/remapper@3.0.0/src/mod.ts"
+import * as Remapper from "https://deno.land/x/remapper@3.1.1/src/mod.ts"
 
 /**
  * Spawns in walls that resemble snow.
