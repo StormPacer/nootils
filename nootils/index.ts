@@ -10,7 +10,6 @@ export * from './decor/rain.ts'
 export * from './decor/smoke.ts'
 export * from './decor/snow.ts'
 export * from './decor/water.ts'
-export * from './stars.ts'
 
 export * from './notes/ghosty.ts'
 export * from './notes/notetrail.ts'
